@@ -31,7 +31,6 @@ public:
 			head->prev = temp;
 			head = temp;
 		}
-		delete temp;
 	}
 
 	void push_back(int value) {
@@ -45,7 +44,6 @@ public:
 			tail->next = temp;
 			tail = temp;
 		}
-		delete temp;
 	}
 
 	void pop_front() {
@@ -119,7 +117,7 @@ public:
 };
 
 void print_menu() {
-	std::cout << "choose action:\n1.push front\n2.push back\n3.pop front\n4.pop back\n5.display\n6.remove duplicates\n8.exit" << std::endl;
+	std::cout << "choose action:\n1.push front\n2.push back\n3.pop front\n4.pop back\n5.display\n6.sort\n7.remove duplicates\n8.exit" << std::endl;
 }
 
 int main()
